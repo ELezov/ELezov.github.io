@@ -5,13 +5,13 @@ title: Биометрическая аутентификация в iOS!
 
 ![][LOGO]
 ##### Биометрическая аутентификация в iOS представлена (на момент написания) двумя видами:
-* аутентификация по отпечатку пальца (Touch ID)
-* аутентификация по форме лица (Face ID )
+* аутентификация по отпечатку пальца (**Touch ID**)
+* аутентификация по форме лица (**Face ID**)
 
-В iOS 8 появилась возможность использования технологий Touch ID. Впервые данная функциональность была встроена в iPhone 5s. 
-Face ID - это 3d сканер формы лица. На данный момент имеется лишь на iPhone X и заменяет собой Touch ID.
+В iOS 8 появилась возможность использования технологий **Touch ID**. Впервые данная функциональность была встроена в iPhone 5s. 
+**Face ID** - это 3d сканер формы лица. На данный момент имеется лишь на iPhone X и заменяет собой **Touch ID**.
 
-Работа с Touch ID/ Face ID осуществляется через **LocalAuthentication.framework**.
+Работа с **Touch ID**/**Face ID** осуществляется через **LocalAuthentication.framework**.
 
 ### Порядок действий
 1. ###### Необходимо создать context проверки подлинности:
@@ -31,28 +31,25 @@ Face ID - это 3d сканер формы лица. На данный моме
     
 ### Исключения и ошибки на которые стоит обратить внимание
 
-0. ###### Отслеживание изменения отпечатков пальца (удаление / добавление)
+##### 0. Отслеживание изменения отпечатков пальца (удаление / добавление)
 Это недокументированное исключение, отслеживать событие необходимо вручную.
 Я воспользовался примером со [stackoverflow][SOFA] и написал такую функцию:
 ``` swift
 // Проверяем, были ли изменены биометрические данные
-    func biometricDateIsValid() -> Bool {
-        let context = LAContext()
-        context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
-        var result: Bool = true
-        // Получаем сохраненный биометрические данные
-        let oldDomainState = UserDefaultsHelper.biometricDate
-        // Получаем текущие биометрические данные
-        guard let domainState = context.evaluatedPolicyDomainState
-            else { return result }
-        
-        // Сохраняем новые текущие биометрические данные в UserDefaults
-        UserDefaultsHelper.biometricDate = domainState
-        
-        result = (domainState == oldDomainState || oldDomainState == nil)
-        
-        return result
-    }
+func biometricDateIsValid() -> Bool {
+    let context = LAContext()
+    context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+    var result: Bool = true
+    // Получаем сохраненный биометрические данные
+    let oldDomainState = UserDefaultsHelper.biometricDate
+    // Получаем текущие биометрические данные
+    guard let domainState = context.evaluatedPolicyDomainState
+        else { return result }
+    // Сохраняем новые текущие биометрические данные в UserDefaults
+    UserDefaultsHelper.biometricDate = domainState
+    result = (domainState == oldDomainState || oldDomainState == nil)
+    return result
+  }
 ```
 После проверки на возможность использования биометрической аутентификации мы получаем текущий **PolicyDomainState** из context и сравниваем с тем,который был раньше. ( При каждой успешной аутентификации мы сохраняем текущий в UserDefaults. )
 
@@ -64,22 +61,22 @@ Face ID - это 3d сканер формы лица. На данный моме
 ##### 3. Аутентификация закончилась неуспешно, так как на телефоне отсутствуют биометрические данные.
 Более подробно о типах ошибок можно прочитать [тут][ERRORCODE].
 ``` swift
-  let errorCode = error._code
-        if #available(iOS 11.0, *) {
-            if [LAError.biometryLockout.rawValue,
-                LAError.biometryNotEnrolled.rawValue].contains(where: { $0 == errorCode }) {
-		/* показываем alert с возможностью перехода в настройки телефона */
-            } else {
-                /* Уведомляем пользователя об ошибке и невозможности аутентификации*/
-            }
-        } else {
-            if [LAError.touchIDLockout.rawValue,
-                LAError.touchIDNotEnrolled.rawValue].contains(where: { $0 == errorCode }) {
-                	 /* показываем alert с возможностью перехода в настройки телефона */
-            } else {
-               /* Уведомляем пользователя об ошибке и невозможности аутентификации*/
-            }
-        }
+let errorCode = error._code
+if #available(iOS 11.0, *) {
+    if [LAError.biometryLockout.rawValue,
+        LAError.biometryNotEnrolled.rawValue].contains(where: { $0 == errorCode }) {
+        /* показываем alert с возможностью перехода в настройки телефона */
+    } else {
+        /* Уведомляем пользователя об ошибке и невозможности аутентификации*/
+    }
+} else {
+    if [LAError.touchIDLockout.rawValue,
+        LAError.touchIDNotEnrolled.rawValue].contains(where: { $0 == errorCode }) {
+        /* показываем alert с возможностью перехода в настройки телефона */
+    } else {
+        /* Уведомляем пользователя об ошибке и невозможности аутентификации*/
+    }
+}
 ```
 Ошибка **(1)** обычно обрабатывается по общим правилам, а ошибки **(2)**  и **(3)** немного иначе.
 
@@ -90,21 +87,20 @@ Face ID - это 3d сканер формы лица. На данный моме
 Для перехода в настройки телефона из нашего приложения необходимо следующее:
 ``` swift
 func showDeviceSettings() {
-        guard let settingURL =   URL(string : "App-Prefs:") else { return }
-        
-        if UIApplication.shared.canOpenURL(settingURL){
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(settingURL, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(settingURL)
-            }
+    guard let settingURL =   URL(string : "App-Prefs:") else { return }    
+    if UIApplication.shared.canOpenURL(settingURL){
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(settingURL, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(settingURL)
         }
     }
+}
 ```
 
 Интересная особенность заключается в том, что в **iOS 10** вы могли перейти сразу на экран настройки **Touch ID** с помощью следующего URL:
 ``` swift 
-    URL(string : "App-Prefs:root=TOUCHID_PASSCODE") 
+URL(string : "App-Prefs:root=TOUCHID_PASSCODE") 
 ```
 В **iOS 11** вы можете пройти только для главного экрана настроек.
 
@@ -139,4 +135,3 @@ context.touchIDAuthenticationAllowableReuseDuration = 30
    [ERRORCODE]: <https://developer.apple.com/documentation/localauthentication/laerror/code>
    [PROFILE_GITHUB]: <https://github.com/ELezov>
    [PROJECT]: <https://github.com/ELezov/iOS-BiometricLocalAuth/tree/develop>
-
