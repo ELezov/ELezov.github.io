@@ -100,7 +100,7 @@ func showDeviceSettings() {
 
 Интересная особенность заключается в том, что в **iOS 10** вы могли перейти сразу на экран настройки **Touch ID** с помощью следующего URL:
 ``` swift 
-URL(string : "App-Prefs:root=TOUCHID_PASSCODE") 
+URL(string: "App-Prefs:root=TOUCHID_PASSCODE") 
 ```
 В **iOS 11** вы можете пройти только для главного экрана настроек.
 
