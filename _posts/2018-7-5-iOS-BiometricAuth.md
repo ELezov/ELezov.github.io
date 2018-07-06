@@ -87,7 +87,7 @@ if #available(iOS 11.0, *) {
 Для перехода в настройки телефона из нашего приложения необходимо следующее:
 ``` swift
 func showDeviceSettings() {
-    guard let settingURL =   URL(string : "App-Prefs:") else { return }    
+    guard let settingURL = URL(string: "App-Prefs:") else { return }    
     if UIApplication.shared.canOpenURL(settingURL){
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(settingURL, options: [:], completionHandler: nil)
