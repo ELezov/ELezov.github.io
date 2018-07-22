@@ -12,6 +12,7 @@ title: Отображение Pdf из base64 в iOS!
  
 iOS предоставляет вам возможность отобразить ваш PDF в WebView.
 Для этого вам необходимо получить объект Data из вашей base64-строки:
+
 ``` swift 4
 extension String {
     func base64ToData() -> Data? {
@@ -19,7 +20,9 @@ extension String {
     }
 }
 ```
+
 Далее вы можете отобразить ваши бинарные данные в WebView, указав необходимый вам [mimeType](http://www.iana.org/assignments/media-types/media-types.xhtml)
+
 ```  swift 4
   enum Constants {
         static let defaultUrl = "https://www.default.com"
@@ -40,6 +43,7 @@ extension String {
  ```
  
  Так же помимо просмотра pdf часто есть необходимость в возможности поделиться этим pdf файлом, через различные каналы, имеющиеся на телефоне, а так же возможность отправки по электронной почте.
+ 
  Тут нам на помощь приходит **[UIActivityViewController](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller)**.
  Перед использование данного контроллера вы должны локально сохранить ваш файл и получить на него ссылку, а после передать в контроллер.
  Сохранить файл можно следующим образом: 
@@ -67,9 +71,11 @@ extension String {
         return documentsURL
     }
   ```
+  
   Далее при инициализации UIActivityViewController передаем данный url, далее мы можем указать, какие каналы передачи мы хотим [убрать](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/1622009-excludedactivitytypes?language=objc).
+  
   ``` swift 4
-  static func pdfActivityController(url: URL) -> UIActivityViewController {
+ static func pdfActivityController(url: URL) -> UIActivityViewController {
         let objectsToShare = [url]
         let activityController =
             UIActivityViewController(activityItems: objectsToShare,
@@ -79,14 +85,17 @@ extension String {
         
         activityController.excludedActivityTypes = Constants.excludedPdfActivities
         return activityController
-    }
+ }
  ```
+ 
  После проделанных операций мы можем показать экран 
+ 
  ``` swift 4
-  DispatchQueue.main.async {
-                 self.present(activityController, animated: true, completion: nil)
-            }
+ DispatchQueue.main.async {
+      self.present(activityController, animated: true, completion: nil)
+ }
  ```          
+ 
  Проект полностью можно посмотреть на [GitHub](https://github.com/ELezov/iOS-PDF)
  
  **Eugene Lezov** on [GitHub](https://github.com/ELezov)
