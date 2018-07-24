@@ -49,7 +49,7 @@ extension String {
  Сохранить файл можно следующим образом: 
  
  ``` swift 4
-    static func saveBase64StringToPDF(_ base64String: String) -> URL? {
+ static func saveBase64StringToPDF(_ base64String: String) -> URL? {
         guard
             var documentsURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last,
             let convertedData = Data(base64Encoded: base64String)
@@ -57,24 +57,21 @@ extension String {
                 //handle error when getting documents URL
                 return nil
         }
-        
-        //name your file however you prefer
         documentsURL.appendPathComponent(Constants.defaultNamePDFFile)
-        
         do {
             try convertedData.write(to: documentsURL)
         } catch {
             //handle write error here
             return nil
         }
-        
         return documentsURL
-    }
-  ```
+}
+```
   
   Далее при инициализации UIActivityViewController передаем данный url, далее мы можем указать, какие каналы передачи мы хотим [убрать](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/1622009-excludedactivitytypes?language=objc).
   
   ``` swift 4
+  
  static func pdfActivityController(url: URL) -> UIActivityViewController {
         let objectsToShare = [url]
         let activityController =
@@ -86,6 +83,7 @@ extension String {
         activityController.excludedActivityTypes = Constants.excludedPdfActivities
         return activityController
  }
+ 
  ```
  
  После проделанных операций мы можем показать экран 
