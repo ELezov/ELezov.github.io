@@ -48,7 +48,7 @@ extension String {
  Перед использование данного контроллера вы должны локально сохранить ваш файл и получить на него ссылку, а после передать в контроллер.
  Сохранить файл можно следующим образом: 
  
- ``` swift 4
+ ```
  static func saveBase64StringToPDF(_ base64String: String) -> URL? {
         guard
             var documentsURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last,
@@ -70,7 +70,7 @@ extension String {
   
   Далее при инициализации UIActivityViewController передаем данный url, далее мы можем указать, какие каналы передачи мы хотим [убрать](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/1622009-excludedactivitytypes?language=objc).
   
-  ``` swift 4
+  ```
   
  static func pdfActivityController(url: URL) -> UIActivityViewController {
         let objectsToShare = [url]
@@ -88,7 +88,7 @@ extension String {
  
  После проделанных операций мы можем показать экран 
  
- ``` swift 4
+ ```
  DispatchQueue.main.async {
       self.present(activityController, animated: true, completion: nil)
  }
