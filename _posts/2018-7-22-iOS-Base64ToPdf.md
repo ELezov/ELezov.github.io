@@ -13,7 +13,7 @@ title: Отображение Pdf из base64 в iOS!
 iOS предоставляет вам возможность отобразить ваш PDF в WebView.
 Для этого вам необходимо получить объект Data из вашей base64-строки:
 
-``` swift 4
+```
 extension String {
     func base64ToData() -> Data? {
         return Data(base64Encoded: self)
@@ -23,7 +23,7 @@ extension String {
 
 Далее вы можете отобразить ваши бинарные данные в WebView, указав необходимый вам [mimeType](http://www.iana.org/assignments/media-types/media-types.xhtml)
 
-```  swift 4
+```
   enum Constants {
         static let defaultUrl = "https://www.default.com"
         static let mimeTypePDF = "application/pdf"
