@@ -2,6 +2,7 @@
 layout: post
 title: Безопасность мобильного приложения в iOS!
 ---
+![](https://magazin-krepost.ru/image/cache/data/0000APecs-ZAchelki/zvc-2-cerdechko-cl-zamok-vicyachii-kracnii-9645-228x228.jpg)
 
 Банковских МП с каждый годом становится больше, люди уже привыкли управлять своими средствами одним касанием. Этим пользуются злоумышленники.
 
