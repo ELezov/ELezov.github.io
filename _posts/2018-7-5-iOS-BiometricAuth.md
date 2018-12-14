@@ -158,7 +158,7 @@ URL(string: "App-Prefs:root=TOUCHID_PASSCODE")
 
 ##### 4. Face ID и разрешение
 
-Для работы **Face ID** необходимо добавить **NSFaceIDUsageDescription** в info.plist вашего приложения.
+Для работы **Face ID** необходимо добавить [**NSFaceIDUsageDescription**](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) в info.plist вашего приложения.
 Данный ключ позволяет описать причину, по которой ваше приложение использует Face ID.
 
 На реальном девайсе приложение будет крашиться, если вы будете стучаться к Face ID без этого ключа
