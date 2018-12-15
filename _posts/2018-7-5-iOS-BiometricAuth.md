@@ -17,7 +17,7 @@ title: Биометрическая аутентификация в iOS!
 Позже с появлением камеры TrueDepth и выходом iPhone X, Apple показала технологию под названием **Face ID**, которая пришла на смену **Touch ID**.
 Принцип работы заключается в том, что для разблокировки телефона необходимо, чтобы инфракрасная камера произвела сканирование вашего лица. Тут так же происходит сравнение с некоторым эталоном, который заранее заносится в память телефона. В iOS 12 появилось возможность внесения двух образов в систему.
 
-Хочется отметить, что **Face ID** считается более стабильным в работе и надежным, чем **Touch ID**, хотя сама [Apple](https://www.theguardian.com/technology/2017/sep/27/apple-face-id-iphone-x-under-13-twin-facial-recognition-system-more-secure-touch-id) не использовать Face ID, если у вас есть брат-близнец :busts_in_silhouette:, да и случаи сбоев в работе бывают, правда не такие частые как с Touch ID, но пораждающие различные мемы.
+Хочется отметить, что **Face ID** считается более стабильным в работе и надежным, чем **Touch ID**, хотя сама [Apple](https://www.theguardian.com/technology/2017/sep/27/apple-face-id-iphone-x-under-13-twin-facial-recognition-system-more-secure-touch-id) не использовать Face ID, если у вас есть брат-близнец :busts_in_silhouette: , да и случаи сбоев в работе бывают, правда не такие частые как с Touch ID, но пораждающие различные мемы.
 
 ![](https://preview.redd.it/jix6gjnkollz.jpg?width=480&auto=webp&s=c293500efd1a8fc31fc42af37727956c12c1f447) ![](https://i.imgflip.com/1vu07e.jpg)
 
