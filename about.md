@@ -8,28 +8,24 @@ I'm a 23 years old iOS Developer from Russia currently based in Kaliningrad. Res
 
 ### Education
 
-```SEP 2013 - JUN 2017```
-**Bachelor of Computer Science - Immanuel Kant Baltic Federal University - RU**
-While getting a Bachelor's Degree in Computer Science from Baltic Federal University, I have developed skills in software engineering, networking and
+```SEP 2013 - JUN 2017```<br/>
+**Bachelor of Computer Science - Immanuel Kant Baltic Federal University - RU**<br/>
+While getting a Bachelor's Degree in Computer Science from Baltic Federal University, I have developed skills in software engineering, networking and<br/>
 
-```AUG 2017 - JUL 2019```
-**Master of Information Technology in Public Administration - Immanuel Kant Baltic Federal University - RU**
-A place to include any other types of information that you'd like to include about yourself.
+```AUG 2017 - JUL 2019```<br/>
+**Master of Information Technology in Public Administration - Immanuel Kant Baltic Federal University - RU**<br/>
+A place to include any other types of information that you'd like to include about yourself.<br/>
 
 ### Work experience
 
-```FEB 2014 - SEP 2013```
-***Technical Specialist at Immanuel Kant Baltic Federal University, Kaliningrad - RU***
-Supporting for sound and video equipment
+```FEB 2014 - SEP 2013```<br/>
+***Technical Specialist at Immanuel Kant Baltic Federal University, Kaliningrad - RU***<br/>
+Supporting for sound and video equipment<br/>
 
-```JUL 2017 - AUG 2017```
-**Trainee Android Developer KODE, Kaliningrad - RU**
-Development of Android client-server mobile application for tourist
+```JUL 2017 - AUG 2017```<br/>
+**Trainee Android Developer KODE, Kaliningrad - RU**<br/>
+Development of Android client-server mobile application for tourist<br/>
 
-```OKT 2017 - NOW```
-***iOS Developer KODE, Kaliningrad - RU***
-Development of different mobile application, which one has different architecture, such as Mobile Bank, App for travel company, airline company, loyalty program for markets and etc
-
-### Contact me
-
-[eugene.lezov@gmail.com](mailto:eugene.lezov@gmail.com)
+```OKT 2017 - NOW```<br/>
+***iOS Developer KODE, Kaliningrad - RU***<br/>
+Development of different mobile application, which one has different architecture, such as Mobile Bank, App for travel company, airline company, loyalty program for markets and etc<br/>
