@@ -6,10 +6,10 @@
 name: Eugene Lezov
 
 # Short bio or description (displayed in the header)
-description: iOS Developer
+description: I'm iOS Developer from Russia. \n Live in Kaliningrad. \n Work at KODE.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://s2.glbimg.com/LIq57QCpsIEroBRmgw7mQW1KIyk=/e.glbimg.com/og/ed/f/original/2015/01/12/che_corte.jpg
+avatar: https://sun9-24.userapi.com/c849032/v849032464/19818e/1OICidG14q4.jpg
 
 #
 # Flags below are optional
@@ -18,16 +18,16 @@ avatar: http://s2.glbimg.com/LIq57QCpsIEroBRmgw7mQW1KIyk=/e.glbimg.com/og/ed/f/o
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: eugene.lezov@gmail.com
   facebook:
-  flickr:
+  flickr: 
   github: ELezov
   instagram:
-  linkedin:
+  linkedin: eugene-lezov
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/6942243/eugene-lezov
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
