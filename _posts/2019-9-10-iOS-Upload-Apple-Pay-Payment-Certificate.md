@@ -1,4 +1,7 @@
-# Обновление Apple Pay Processing Certificate
+---
+layout: post
+title: Обновление Apple Pay Processing Certificate
+---
 
 Совсем недавно у меня стояла задача в обновлении **Apple Pay Processing Certificate**.  Потратил некоторое время, чтобы ответить на все свои вопросы для успешного выполнения задачи.
 
@@ -14,9 +17,9 @@
   1. Открываете *Keychain Access*, в выпадающем меню выбираете  *Keychain Access > Certificate Assistant > Request a Certificate from a Certificate Authority*.
   2. В открывшемся окне заполняете поле email, выбираете *"Saved to disk"*
   3. Отмечаете галочку *"Let me specify key pair information"*.
-  4. Нажимайте продолжить, выбирайте местоположение для сохранения файла. 
+  4. Нажимайте продолжить, выбирайте местоположение для сохранения файла.
   5. Далее установите **Algorithm: ECC** и **Key Size: 256 bits**.
-  
+
   И вот **CSR** готов.
 
 - Далее необходимо загрузить **CSR** на портал *Apple Developer*.
