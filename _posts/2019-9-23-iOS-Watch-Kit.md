@@ -1,4 +1,7 @@
-**Watch App**
+---
+layout: post
+title: Watch App
+---
 
 Не так давно мне поручили изучение WatchKit и реализацию MVP для Apple Watch.
 
