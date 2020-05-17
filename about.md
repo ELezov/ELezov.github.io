@@ -26,6 +26,10 @@ Supporting for sound and video equipment<br/>
 **Trainee Android Developer KODE, Kaliningrad - RU**<br/>
 Development of Android client-server mobile application for tourist<br/>
 
-```OKT 2017 - NOW```<br/>
+```OKT 2017 - NOV 2019```<br/>
 ***iOS Developer KODE, Kaliningrad - RU***<br/>
 Development of different mobile application, which one has different architecture, such as Mobile Bank, App for travel company, airline company, loyalty program for markets and etc<br/>
+
+```DEC 2019 - NOW```<br/>
+***iOS Developer Tensor, Kaliningrad - RU***<br/>
+iOS Development in enterprise with big team<br/>
