@@ -4,7 +4,7 @@ title:  About me
 permalink: /about/
 ---
 
-I'm a 23 years old iOS Developer from Russia currently based in Kaliningrad. Results-oriented software developer and research professional with 1,5 years experience. I have the technical skills to make successfully technical solutions. I make it my goal to create software with the user in mind, creating applications with a usable and intuitive user interface experience.
+I'm a 25 years old iOS Developer from Russia currently based in Kaliningrad. Results-oriented software developer and research professional with 3 years experience. I have the technical skills to make successfully technical solutions. I make it my goal to create software with the user in mind, creating applications with a usable and intuitive user interface experience.
 
 ### Education
 
