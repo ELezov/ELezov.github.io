@@ -18,7 +18,7 @@ A place to include any other types of information that you'd like to include abo
 
 ### Work experience
 
-```FEB 2014 - SEP 2013```<br/>
+```FEB 2013 - SEP 2014```<br/>
 ***Technical Specialist at Immanuel Kant Baltic Federal University, Kaliningrad - RU***<br/>
 Supporting for sound and video equipment<br/>
 
