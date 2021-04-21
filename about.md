@@ -30,6 +30,10 @@ Development of Android client-server mobile application for tourist<br/>
 ***iOS Developer KODE, Kaliningrad - RU***<br/>
 Development of different mobile application, which one has different architecture, such as Mobile Bank, App for travel company, airline company, loyalty program for markets and etc<br/>
 
-```DEC 2019 - NOW```<br/>
+```DEC 2019 - DEC 2020```<br/>
 ***iOS Developer Tensor, Kaliningrad - RU***<br/>
 iOS Development in enterprise with big team<br/>
+
+```DEC 2020 - NOW```<br/>
+***iOS Developer Tinkoff, Kaliningrad, Remote - RU***<br/>
+iOS Developer at Tinkoff Investing Team, Team Lead in small feature team 'Pulse' <br/>
